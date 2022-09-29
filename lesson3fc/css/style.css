@@ -1,0 +1,26 @@
+.blocktop {
+	color: violet;
+}
+.blocktop div{
+	color: blue;
+}
+div.middle>p{
+	color: yellow;
+}
+.middle.second {
+	color: blueviolet;
+}
+
+.third {
+	color: aquamarine;
+}
+.block-bottom{
+	color: aqua;
+}
+
+div + p{
+	color: mediumvioletred;
+}
+.bottom ~ h1 {
+	color: olive;
+}
