@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=NotoSansMono:wght@400;700;900&display=swap');
+
+@font-face{
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Sans-Serif-Font-Family/Larsseit/Larsseit/Larsseit-Regular.woff2") format("woff2"), 
+	url("../fonts/Larsseit-Sans-Serif-Font-Family/Larsseit/Larsseit/Larsseit-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Sans-Serif-Font-Family/Larsseit/Larsseit/Larsseit-Medium.woff2") format("woff2"), 
+	url("../fonts/Larsseit-Sans-Serif-Font-Family/Larsseit/Larsseit/Larsseit-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Sans-Serif-Font-Family/Larsseit/Larsseit/Larsseit-Bold.woff2") format("woff2"), 
+	url("../fonts/Larsseit-Sans-Serif-Font-Family/Larsseit/Larsseit/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+*{
+	color: blue;
+}
+
+/* body менш ваажливий, ніж *??? */
+body{
+	color: aqua;
+}
+
+body>p{
+	color: purple;
+	font-family: "Roboto";
+	font-weight: 700;
+}
+
+.top span{
+	color: yellow;
+}
+
+.top{
+	color: tomato;
+	font-family: 'NotoSansMono', monospace;
+	font-weight: 700;
+}
+
+p.topnext{
+	color: beige;
+}
+
