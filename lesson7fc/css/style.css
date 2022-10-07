@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: "Lato";
+	color: #424551;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.main {
+	
+}
+
+
+.main__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	align-items: center;
+	color: #1E212C;
+	margin-bottom: 26px;
+}
+.main__image{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.main__image img{
+	max-width: 100%;
+}
+
+.main__top-text{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+
+.main__text{
+	line-height: 1.6;
+	margin-bottom: 48px;
+}
+.main__text p{
+	margin-bottom: 22px;
+}
+
+.main__quote{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1E212C;
+	padding-left: 58px;
+	margin-bottom: 48px;
+	background: url("../img/braces.svg") 0 0 no-repeat;
+}
+
+.main__text ul{
+	margin-bottom: 24px;
+}
+
+.main__text li{
+	margin-bottom: 4px;
+	padding-left: 32px;
+	min-height: 35px;
+	background: url("../img/check.svg") 0 6px no-repeat;
+}
+
+
+
+.footer{
+}
+
+
+/* .footer__background{
+	height: 800px;
+	background-color: darkolivegreen;
+	text-align: center;
+	background-image: url("../img/350z_1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-attachment: scroll;
+} */
+
+.footer__background{
+	height: 720px;
+	background: url("../img/350-2.jpg") repeat-x left top / 200px 200px, url("../img/350z_1.jpg") no-repeat 0px 200px / contain;
+}
+
+.gradient{
+	background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
