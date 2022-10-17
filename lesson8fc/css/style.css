@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+	font-family: Lato;
+	color: #424551;
+}	
+
+[class*="__container"]{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.page {
+}
+.page__container {
+}
+.page-top {
+	margin-bottom: 40px;
+
+}
+.page-top__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.page-top__top-text{
+margin-bottom: 48px;
+}
+
+.page-top__top-text p{
+	line-height: 1.6;
+}
+.page-top__main-text{
+	margin-bottom: 24px;
+}
+.page-top__main-text p {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.5;
+	color: #1E212C;
+}
+
+.page-top__list li:not(:last-child){
+	margin-bottom: 4px;
+}
+
+.page-top__list li{
+	line-height: 1.6;
+	min-height: 16px;
+}
+
+.page-top__list li::before{
+	background: url("../img/check.svg") 0 0 no-repeat;
+	content: "";
+	display: inline-block;
+	margin-right: 16px;
+	width: 16px;
+	height: 16px;
+}
+.page-top__list li:hover::before{
+	transition: all 0.3s ease 0s;
+	transform: rotate(-360deg);
+}
+
+.page-main {
+	margin-bottom: 50px;
+}
+.page-main__category {
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+
+.page-main__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1E212C;
+	margin-bottom: 16px;
+}
+
+.page-main__description {
+	font-size: 20px;
+	line-height: 1.5;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+
+.page-main__star {
+	font-weight: 700;
+	line-height: 1.6;
+	color: #424551;
+	margin-bottom: 4px;
+}
+
+.page-main__star::before{
+	content: "";
+	background: url("../img/Star.svg")0 5px no-repeat;
+	margin-right: 8px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	min-height: 20px;
+}
+
+.page-main__circle {
+	font-weight: 700;
+	line-height: 1.6;
+	margin-bottom: 4px;
+	min-height: 25px;
+}
+
+.page-main__circle::before{
+	content: "";
+	background: url("../img/Play.svg")0 5px no-repeat;
+	margin-right: 8px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	min-height: 20px;
+}
+
+.page-main__man {
+	font-weight: 700;
+	line-height: 1.6;
+	margin-bottom: 32px;
+	min-height: 20px;
+}
+
+.page-main__man::before{
+	content: "";
+	background: url("../img/Profile.svg")0 5px no-repeat;
+	margin-right: 8px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	min-height: 20px;
+}
+
+.page-main__text {
+	line-height: 1.6;
+}
+
+/* homework */
+
+.task {
+	background-color:darkgrey;
+	font-size: 36px;
+}
+
+.task__container {
+
+}
+.task__title {
+	
+}
+.task__title:hover{
+	text-decoration: underline;
+	border: 2px double red;
+}
+.task__title:hover .task__title-item{
+	visibility: visible;
+	opacity: 1;
+}
+
+.task__title-item{
+	opacity:0;
+	visibility: hidden;
+}
+
+.task__list{
+}
+.task__list >p:active{
+text-transform: uppercase;
+border: 2px solid rosybrown;
+text-align: center;
+}
+
+.list{
+	margin-left: 20px;
+}
+
+.listtwo{
+	display: none;
+}
+.list li:hover .listtwo{
+	display: block;
+	margin-left: 10px;
+}
+
+.list li:hover .listtwo li::before{
+	content: "-";
+}
+.task__visited a:visited{
+	color: violet;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.task__focus{
+	margin-bottom: 30px;
+}
+.task__focus a:focus{
+	border: 5px dashed blue;
+}
+.task__target{
+margin-bottom: 50px;
+}
+#debut{
+	display: none;
+}
+#debut:target{
+	display: block;
+}
+.task__target p#debut{
+	background-color: aqua;
+	border-radius: 10px;
+}
+.debut > a{
+	background-color: aqua;
+	border-radius: 15px;
+}
+
+#special{
+	display: none;
+}
+#special:target{
+	display: block;
+}
+.task__target p#special{
+	background-color: brown;
+	border-radius: 10px;
+}
+.special > a{
+	background-color: brown;
+	border-radius: 10px;
+}
+.task__text{
+
+}
+.task__text p:not(:last-child){
+margin-bottom: 10px;
+}
+
+.task__text p:first-child{
+	color: darkblue;
+}
+.task__text a:first-of-type span{
+	border: 3px solid yellow;
+}
+.task__text p:last-child{
+	color: darkgoldenrod;
+}
+.task__text a:last-of-type{
+	border: 2px solid orchid;
+}
+.task__text p:nth-child(2){
+	text-transform: uppercase;
+}
+.task>*:last-child{
+	margin-bottom: 0px;
+}
+.colors{
+margin-bottom: 30px;
+}
+.colors li::before{
+	content: "";
+	background: url('../img/check.svg')0 0 no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+.colors li::after{
+	content: ";";
+}
+
+.game h2{
+	text-align: center;
+}
+.game{
+	padding-bottom: 50px;
+}
+.game-box {
+	margin: 0 auto;
+	width: 500px;
+	height: 450px;
+	background-color: darkolivegreen;
+}
+.game-item{
+}
+.game-item-1 {
+	width: 100px;
+	height: 50px;
+	background-color: coral;
+}
+.game-item-1:hover + .game-item-2, .game-item-2:hover {
+	visibility: visible;
+}
+.game-item-2 {
+	width: 200px;
+	height: 50px;
+	background-color: chocolate;
+	margin-left: 100px;
+	margin-top: -50px;
+	visibility: hidden;
+}
+.game-item-2:hover + .game-item-3, .game-item-3:hover {
+	visibility: visible;
+}
+.game-item-3 {
+	width: 50px;
+	height: 100px;
+	background: chocolate;
+	margin-left: 250px;
+	visibility: hidden;
+}
+.game-item-3:hover + .game-item-4, .game-item-4:hover{
+	visibility: visible;
+}
+.game-item-4 {
+	width: 40px;
+	height: 90px;
+	background-color: chocolate;
+	margin-left: 255px;
+	visibility: hidden;
+}
+.game-item-4:hover + .game-item-5, .game-item-5:hover{
+	visibility: visible;
+}
+.game-item-5 {
+	width: 120px;
+	height: 35px;
+	background-color: chocolate;
+	margin-left: 255px;
+	visibility: hidden;
+}
+.game-item-5:hover + .game-item-6, .game-item-6:hover{
+	visibility: visible;
+}
+.game-item-6 {
+	width: 30px;
+	height: 80px;
+	background-color: chocolate;
+	margin-left: 345px;
+	visibility: hidden;
+}
+.game-item-6:hover + .game-item-7, .game-item-7:hover{
+	visibility: visible;
+}
+.game-item-7 {
+	width: 25px;
+	height: 80px;
+	background-color: chocolate;
+	margin-left: 348px;
+	visibility: hidden;
+}
+.game-item-7:hover + .game-item-8, .game-item-8:hover{
+	visibility: visible;
+}
+.game-item-8 {
+	width: 152px;
+	height: 20px;
+	background-color: coral;
+	margin-left: 348px;
+	visibility: hidden;
+}
+
