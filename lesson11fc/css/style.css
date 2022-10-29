@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+body{
+	font-family:"Fuzzy Bubbles";
+}
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+	position: relative;
+}
+
+.header {
+	position: fixed;
+	z-index: 300;
+	top: 0;
+	left: 0;
+	background-color: darksalmon;
+	width: 100%;
+	text-align: center;
+	min-height: 80px;
+}
+.header__container {
+	
+}
+.header__menu {
+	
+}
+.menu {
+	font-size: 0px;
+	padding: 20px;
+}
+.menu__item {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 900;
+	text-transform: capitalize;
+	position: relative;
+}
+.menu__item:not(:last-child){
+	margin-right: 55px;
+}
+.menu__link {
+}
+.menu__sub-menu {
+}
+.sub-menu {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 130%;
+	text-align: left;
+}
+.menu__item:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	
+}
+.sub-menu__item {
+
+}
+.sub-menu__item:not(:last-child){
+	margin-bottom: 10px;
+}
+.sub-menu__link1 {
+}
+.sub-menu__link2 {
+}
+
+.main {
+	padding: 20px;
+	padding-bottom: 60px;
+	/* ? не працює паддінг боттом, а при марджин боттом продовжується не фон мейн (колір хакі), а звичайний body? */
+	min-height: 700px;
+	position: relative;
+	width: 100%;
+	background-color: khaki;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+.main__container {
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+.main__relative {
+	
+}
+.relative {
+	position: absolute;
+	min-width: 400px;
+	min-height: 80px;
+	overflow: auto;
+	background-color: bisque;
+	margin: 0px 0px 200px 300px;
+	border: 3px solid whitesmoke;
+	box-sizing: content-box;
+
+/* ! тут не змогла вирівняти через марджин 0 авто, бо потребувала відступу зверху 60рх і ніяк так не вдавалось. Чи є якийсь спосіб? 
+! і не могла ніяк зробити марджин боттом*/
+}
+.relative__container {
+
+}
+.relative__block {
+	
+	display: inline-block;
+	position: relative;
+	top: 60px;
+	left: 50px;
+	/* text-align: center; */
+	background-color: antiquewhite;
+	border: 2px solid darkred;
+}
+#relative{
+
+}
+
+.main__absolute {
+}
+.absolute {
+	position: absolute;
+	min-width: 400px;
+	min-height: 80px;
+	overflow: auto;
+	background-color: bisque;
+	margin: 200px 0px 100px 300px;
+	border: 3px solid whitesmoke;
+	box-sizing: content-box;
+}
+.absolute__container {
+	position: relative;
+}
+.absolute__block {
+	position: absolute;
+	left: 10px;
+	top: 40px;
+	display: inline-block;
+	background-color: antiquewhite;
+	border: 2px solid darkred; 
+}
+#absolute{
+
+}
+
+.main__fixed {
+}
+.fixed {
+	position: absolute;
+	min-width: 400px;
+	max-height: 80px;
+	overflow: auto;
+	background-color: bisque;
+	margin: 400px 0px 100px 300px;
+	border: 3px solid whitesmoke;
+	box-sizing: content-box;
+}
+.fixed__container {
+	position: relative;
+}
+.fixed__block {
+	background-color: antiquewhite;
+	border: 2px solid darkred;
+}
+.fixed__block--top{
+	position: fixed;
+	z-index: 100;
+	left: 400px;
+	top: 500px;
+}
+/* .fixed__block--bottom{
+	position: fixed;
+	z-index: 110;
+	left: 300;
+	top: 900;
+} */
+/* ! не висвітлялись два блоки фіксед чомусь, не появлявся другий блок  фіксед, і зникав топ, коли активувала боттом..чи я невірно використовую мікс?:( */
+
+
+.main__sticky {
+}
+.sticky {
+	position: absolute;
+	max-width: 400px;
+	max-height: 80px;
+	overflow: auto;
+	background-color: bisque;
+	margin: 600px 0px 200px 300px;
+	border: 3px solid whitesmoke;
+	box-sizing: content-box;
+}
+.sticky__container {
+	position: relative;
+}
+.sticky__block {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: antiquewhite;
+	border: 2px solid darkred;
+	background-color: hotpink;
+}
+
+.sticky__block--blue{
+	background-color: cadetblue;
+}
+.sticky__block--yellow{
+	background-color: gold;
+}
+
+.car {
+	position: relative;
+	top: 700px;
+	left: 0;
+	z-index: 5;
+	background: url('../img/back.jpg')0 0 / 1800px 1000px no-repeat;
+}
+.car__container{
+	width: 100%;
+	min-height: 1200px;
+}
+.car__body {
+	position: absolute;
+	top: 600px;
+	left: 100px;
+}
+.car__wheelfront {
+	position: absolute;
+	top: 730px;
+	left: 680px;
+	z-index: 1000;
+}
+.car__wheelfront img{
+	max-width: 400px;
+	max-height: 400px;
+}
+.car__wheelback {
+	position: absolute;
+	top: 730px;
+	left: 95px;
+}
+.car__wheelback img{
+	max-width: 400px;
+	max-height: 400px;
+}
+.car__roof{
+	position: absolute;
+	top: 423px;
+	right: 600px;
+}
+.car__roof img{
+	width: 1200px;
+	
+}
+.car__image{
+	position: absolute;
+	top:648px;
+	right: 1125px;
+	opacity: 0;
+	visibility: hidden;
+}
+.car__image img{
+	max-width: 700px;
+	max-height: 600px;
+}
+.exhaust a{
+	font-size: 30px;
+	font-weight: 900;
+	color: aliceblue;
+	position: absolute;
+	top: 650px;
+	left: 0px;
+	display: inline-block;
+}
+.exhaust{
+	position: relative;
+}
+.exhaust:hover .car__image{
+	opacity: 1;
+	visibility: visible;
+}
+/* ! а тут все-таки вдалося зробити ховер, тільки от вийшло його зробити лише при наведенні на весь блок .exhaust, а не змогла зробити при наведенні на ссилку.Тобто мусить блок який появляється обовєязково бути вкладеним в блок, якому задаю ховер?  Прошу строго не судити:))поступово пробую це все вивчити)) і дякую за перевірки) */
+/* .car-exhaust:hover{
+	display: inline-block;
+	max-width: 700px;
+	max-height: 600px; */
+/* } */
+
+.button{
+	position: absolute;
+	font-size: 50px;
+	color: blue;
+	font-weight: 900;
+	z-index: 90;
+	top: 1660px;
+	left: 1200px;
+	border: 3px dashed palevioletred;
+
+}
+.button:hover{
+	border: 5px dashed palevioletred;
+}
+/* .button:hover .car__exhaust{
+	opacity: 1;
+	visibility: visible;
+	max-width: 700px;
+	max-height: 600px;
+} */ 
+/* ? так чомусь на жаль не вийшло */
+

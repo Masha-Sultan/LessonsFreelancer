@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework11</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__menu menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#relative">Relative</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#absolute">Absolute</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">fixed</a>
+						<ul class="menu__sub-menu sub-menu">
+							<li class="sub-menu__item">
+								<a class="sub-menu__link1" href="#top">top</a>
+							</li>
+							<li class="sub-menu__item">
+								<a class="sub-menu__link2" href="#bottom">bottom</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#sticky">Sticky</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="main__relative relative">
+					<div class="relative__container">
+						<div id="relative" class="relative__block">I am relative</div>
+					</div>
+				</div>
+				<div class="main__absolute absolute">
+					<div class="absolute__container">
+						<div id="absolute" class="absolute__block">I am absolute</div>
+					</div>
+				</div>
+				<div class="main__fixed fixed">
+					<div class="fixed__container">
+						<div id="top" class="fixed__block fixed__block--top">I am fixed top
+						</div>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+					</div>
+				</div>
+				<!-- <div class="main__fixed fixed">
+					<div class="fixed__container">
+						<div id="bottom" class="fixed__block fixed__block--bottom">I am fixed bottom
+						</div>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+						<p>.</p>
+					</div>
+				</div> -->
+				<div class="main__sticky sticky">
+					<div class="sticky__container">
+						<div id="sticky" class="sticky__block">I am sticky</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet et, consectetur quisquam esse, obcaecati totam, vel sapiente accusamus eaque corrupti at recusandae ratione numquam optio ipsam ut expedita beatae!</p>
+						<div class="sticky__block sticky__block--blue">I am sticky</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet et, consectetur quisquam esse, obcaecati totam, vel sapiente accusamus eaque corrupti at recusandae ratione numquam optio ipsam ut expedita beatae!</p>
+						<div class="sticky__block sticky__block--yellow">I am sticky</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex amet et, consectetur quisquam esse, obcaecati totam, vel sapiente accusamus eaque corrupti at recusandae ratione numquam optio ipsam ut expedita beatae!</p>
+					</div>
+				</div>
+
+				<div class="car">
+					<div class="car__container">
+						<div class="car__body">
+							<img src="img/mazda_PNG22.png" alt="body">
+						</div>
+						<div class="car__wheelfront">
+							<img src="img/wheel.png" alt="wheelfront">
+						</div>
+						<div class="car__wheelback">
+							<img src="img/wheel.png" alt="wheelback">
+						</div>
+						<div class="car__roof">
+							<img src="img/topok.png" alt="roof">
+						</div>
+						<div class="car__exhaust">
+							<div class="exhaust">
+								<a href="a">HOVER ME</a>
+								<div class="car__image">
+									<img src="img/exhaust.png" alt="exhaust">
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="button">
+					<a href="">hover ME </a>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
