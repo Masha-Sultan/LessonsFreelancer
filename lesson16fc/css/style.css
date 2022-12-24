@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body{
+	font-family: "Lato";
+	font-size: 16px;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+.page{
+	padding: 30px;
+}
+.form{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+.page__form-one{
+	background-color: rosybrown;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.form__line{
+	
+}
+.form__line:not(:last-child){
+	margin-bottom: 20px;
+}
+.form__input{
+	height: 40px;
+	padding: 0px 15px;
+	border-radius: 10px;
+	/* background-color: rosybrown; */
+}
+.form__input::placeholder{
+	color: sienna;
+}
+
+.form__title {
+}
+.form__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+.form__radio {
+	
+}
+.form__input--radio,
+.form__input--chk{
+	width: auto;
+	vertical-align: middle;
+}
+.form__label{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+/* -------------------------------------------------------------------------------- */
+.page__form-two {
+}
+.main {
+}
+.main__container {
+	
+}
+[class*="__container"]{
+	max-width: 1245px;
+	margin: 0 auto;
+}
+.main__section {
+	display: flex;
+	gap: 105px;
+	justify-content: center;
+	align-items: center;
+}
+.main__media {
+	flex: 0 1 35%;
+	margin-right: 20px;
+	min-height: 481px;
+}
+.main__media img{
+	width: 100%;
+}
+.main__content {
+	flex: 0 1 65%;
+}
+.content-main {
+}
+.content-main__header {
+	color: #1E212C;
+}
+.content-main__header:not(:last-child){
+	margin-bottom: 40px;
+}
+.content-main__subtitle {
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+.content-main__subtitle:not(:last-child){
+	margin-bottom: 8px;
+}
+.content-main__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	
+}
+.content-main__data {
+	
+}
+.data {
+	
+}
+.data__section-one{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin-bottom: 24px;
+}
+.data__line {
+	flex: 0 0 48%;
+}
+.data__line >.data__area{
+	margin-bottom: 48px;
+}
+.data__label {
+	display: inline-block;
+	line-height: 1.6;
+	color: #424551;
+}
+.data__label:not(:last-child){
+	margin-bottom: 8px;
+}
+.data__input {
+	padding: 0px 13px;
+	height: 52px;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	margin-right: 25px;
+	width: 100%;
+}
+.data__input::placeholder{
+	color: #9A9CA5;
+}
+.data__area {
+	padding-left: 16px;
+	padding-top: 13px;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	width: 100%;
+	min-height: 100px;
+	max-height: 128px;
+	/* не зрозуміла, як тут правильно зробити textarea на 100% довжини, а не 48 */
+	resize: vertical;
+	flex: 1 1 100%;
+}
+.radio {
+	position: relative;
+	margin-bottom: 10px;
+}
+.radio__label {
+	display: inline-flex;
+	gap: 12px;
+	cursor: pointer;
+}
+.radio__label::before{
+	content: "";
+	height: 15px;
+	width: 15px;
+	background-color: darkorange;
+	border-radius: 50%;
+	flex: 0 0 15px;
+}
+.radio__input:checked + .radio__label::before{
+	background: url('../images/checked.svg') center / 70% no-repeat;
+	/* НЕ ДІЄ ЧОМУСЬ... */
+}
+.radio__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox{
+	position: relative;
+}
+.data__section-two{
+	display: flex;
+	gap: 50px;
+	align-items: center;
+}
+.checkbox__label {
+	display: inline-flex;
+	gap: 12px;
+	cursor: pointer;
+}
+
+.checkbox__label::before{
+	content: "";
+	height: 16px;
+	width: 16px;
+	background-color: chocolate;
+	flex: 0 0 16px;
+}
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox__input:focus + .checkbox__label{
+	outline: #1E212C 2px solid;
+}
+/* --------	i TAB НЕ ПРАЦЮЄ, ЧИ Я ЧИМОСЬ ВИКЛЮЧИЛА ЦІ ВЛАСТИВОСТІ?? */
+.checkbox__input:checked + .checkbox__label::before{
+	background: url('../images/check.svg') center / 70% no-repeat;
+	/* і тут чомусь не працює галочка check */
+}
+.buttons__submit {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 3;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	width: 100%;
+	text-align: center;
+}

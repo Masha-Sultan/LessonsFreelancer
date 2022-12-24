@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>homework16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main class="page">
+			<div class="page__form-one">
+				<form action="#" method="get" class="form">
+					<div class="form__line">
+						<input type="text" name="name" placeholder="Wprowadz imie" class="form__input">
+					</div>
+					<div class="form__line">
+						<input type="password" name="pass" autocomplete="off" placeholder="Wprowadz haslo"
+							class="form__input">
+					</div>
+					<div class="form__line">
+						<input type="tel" name="tel" autocomplete="off" placeholder="Wprowadz telefon" class="form__input">
+					</div>
+					<div class="form__line">
+						<input type="file" name="file" multiple accept="image/jpg, image/jpeg" class="form__input">
+					</div>
+					<div class="form__line">
+						<div class="form__title">Gender</div>
+						<div class="form__radio">
+
+							<input class="form__input form__input--radio" id="gender-1" type="radio" name="gender"
+								value="female">
+							<label class="form__label" for="gender-1">Female</label>
+						</div>
+						<div class="form__radio">
+
+							<input id="gender-2" type="radio" name="gender" value="male"
+								class="form__input form__input--radio">
+							<label class="form__label" for="gender-1">Male</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<input id="house" type="checkbox" name="check" class="form__input form__input--chk">
+						<label for="house" class="form__label">Mieszkanie</label>
+					</div>
+					<div class="form__line">
+						<textarea name="textarea" class="form__area">blabla</textarea>
+					</div>
+					<div class="form__line">
+						<select name="list">
+							<option value="">pkt1</option>
+							<option selected value="">pkt2</option>
+							<option value="">pkt3</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<button type="submit">submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="page__form-two">
+				<div class="main">
+					<div class="main__container">
+						<div class="main__section">
+							<div class="main__media">
+								<img src="images/illustration.svg" alt="illustration">
+							</div>
+							<div class="main__content content-main">
+								<div class="content-main__header">
+									<div class="content-main__subtitle">Any questions?</div>
+									<h1 class="content-main__title">Drop us a line</h1>
+								</div>
+								<form class="content-main__data data">
+									<section class="data__section-one">
+										<div class="data__line">
+											<label class="data__label" for="first-name">First Name*</label>
+											<input class="data__input" placeholder="Your first name" required id="first-name"
+												type="text">
+										</div>
+										<div class="data__line">
+											<label class="data__label" for="last-name">Last name*</label>
+											<input class="data__input" placeholder="Your last name" required id="last-name"
+												type="text">
+										</div>
+										<div class="data__line">
+											<label class="data__label" for="email">Email*</label>
+											<input class="data__input" placeholder="Your working email" required id="email"
+												type="email">
+										</div>
+										<div class="data__line">
+											<label class="data__label" for="phone">Phone</label>
+											<input class="data__input" placeholder="Your phone number" id="phone" type="tel">
+										</div>
+									</section>
+									<div class="data__line">
+										<label class="data__label" for="message">Message*</label>
+										<textarea class="data__area" placeholder="Your message" id="message"></textarea>
+									</div>
+									<div class="data__line">
+										<div class="radio">
+											<label class="radio__label" for="personal">I agree to share my personal info</label>
+											<input class="radio__input" id="personal" type="radio">
+										</div>
+										<div class="radio">
+											<label class="radio__label" for="in-touch">I will keep in touch</label>
+											<input class="radio__input" id="in-touch" type="radio">
+										</div>
+									</div>
+									<section class="data__section-two">
+										<div class="data__line">
+											<div class="checkbox">
+												<label class="checkbox__label" for="checkbox">I agree to receive communications from
+													Createx Online School</label>
+												<input class="checkbox__input" id="checkbox" type="checkbox">
+											</div>
+										</div>
+										<div class="data__line">
+											<button type="submit" class="buttons__submit">Send message</button>
+										</div>
+									</section>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+</body>
+
+</html>
